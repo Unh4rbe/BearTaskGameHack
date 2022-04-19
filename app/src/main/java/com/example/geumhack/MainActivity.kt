@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         var btdev = findViewById<Button>(R.id.btdev)
         var btinfo = findViewById<Button>(R.id.btinfo)
         btstart.setOnClickListener {
-            //starts a game
+            var gogame = Intent(this@MainActivity, GameStartActivity::class.java)
+            startActivity(gogame)
         }
         btdev.setOnClickListener {
             var godev = Intent(this@MainActivity, developers::class.java)
