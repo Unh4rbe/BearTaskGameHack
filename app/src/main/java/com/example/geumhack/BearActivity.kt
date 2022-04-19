@@ -29,6 +29,7 @@ class BearActivity : AppCompatActivity() {
             }
             if(counter == 4) {
                 textview.text = "Вы идете с медведем искать его балалайку..."
+                btnext.text = "Идти"
             }
             if(counter == 5) {
                 var gobear = Intent(this@BearActivity, T34Activity::class.java)

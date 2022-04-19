@@ -21,7 +21,6 @@ class T34Activity : AppCompatActivity() {
             }
             if (counter == 1) {
                 textview.text = "C переди определенно нет балалайки, может стоит посмотреть сзади?"
-
             }
             if (counter == 2) {
                 textview.text = "- Медведь: Пока мы ищем, я расскажу тебе историю этого танка. Он был великолепным защитником во время Великой Отечественной войны. Стоит отдать честь создателю этого танка, его звали Михаил Ильич Кошкин."
@@ -31,9 +30,10 @@ class T34Activity : AppCompatActivity() {
             }
             if (counter == 4) {
                 textview.text = "Вы не видите балалайки, собственно как и причин задерживаться. Вы идете дальше..."
+                btnext.text = "Идти"
             }
             if (counter == 5) {
-                var gobear = Intent(this@T34Activity, MainActivity::class.java)
+                var gobear = Intent(this@T34Activity, PeresActivity::class.java)
                 startActivity(gobear)
             }
             counter = counter + 1

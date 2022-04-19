@@ -29,6 +29,7 @@ class GameStartActivity : AppCompatActivity() {
             }
             if(counter == 4) {
                 textview.text = "Вы решаете подойти и помочь медведю, ведь вы очень хороший человек"
+                btnext.text = "Идти"
             }
             if(counter == 5) {
                 var gobear = Intent(this@GameStartActivity, BearActivity::class.java)

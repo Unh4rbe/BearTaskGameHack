@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GeUmHack">
         <activity
+            android:name=".InsideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OutsideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slavaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PeresActivity"
+            android:exported="false" />
+        <activity
             android:name=".T34Activity"
             android:exported="false" />
         <activity
