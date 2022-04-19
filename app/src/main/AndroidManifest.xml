@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GeUmHack">
         <activity
+            android:name=".T34Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BearActivity"
+            android:exported="false" />
+        <activity
             android:name=".GameStartActivity"
             android:exported="false" />
         <activity
