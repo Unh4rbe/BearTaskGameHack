@@ -34,6 +34,7 @@ class T34Activity : AppCompatActivity() {
             }
             if (counter == 5) {
                 var gobear = Intent(this@T34Activity, PeresActivity::class.java)
+                finish()
                 startActivity(gobear)
             }
             counter = counter + 1

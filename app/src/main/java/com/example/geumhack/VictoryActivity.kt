@@ -2,8 +2,10 @@ package com.example.geumhack
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.coroutines.delay
 
 class VictoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,27 +27,31 @@ class VictoryActivity : AppCompatActivity() {
                     bt1.text = "Михаил Ильич Кошников"
                     bt2.text = "Калашников (автомат)"
                     bt1.setOnClickListener {
-                        counterT = counterT++
+                        counterT = counterT+1
                         counter=counter+1
                         if (counter == 2) {
                             view.text = "В каком году и какого чила открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
-                                counterT = counterT++
+                                counterT = counterT+1
                                 counter=counter+1
                                 if (counter == 3) {
                                     view.text = "Что такое кванториум?"
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -56,13 +62,17 @@ class VictoryActivity : AppCompatActivity() {
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -75,20 +85,24 @@ class VictoryActivity : AppCompatActivity() {
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
-                                counterT = counterT++
+                                counterT = counterT+1
                                 counter=counter+1
                                 if (counter == 3) {
                                     view.text = "Что такое кванториум?"
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -99,13 +113,17 @@ class VictoryActivity : AppCompatActivity() {
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -121,27 +139,31 @@ class VictoryActivity : AppCompatActivity() {
                     bt1.text = "Михаил Ильич Кошников"
                     bt2.text = "Калашников (автомат)"
                     bt1.setOnClickListener {
-                        counterT = counterT++
+                        counterT = counterT+1
                         counter=counter+1
                         if (counter == 2) {
                             view.text = "В каком году и какого чила открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
-                                counterT = counterT++
+                                counterT = counterT+1
                                 counter=counter+1
                                 if (counter == 3) {
                                     view.text = "Что такое кванториум?"
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -152,13 +174,18 @@ class VictoryActivity : AppCompatActivity() {
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
+                                        Thread.sleep(3000)
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -171,20 +198,24 @@ class VictoryActivity : AppCompatActivity() {
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
-                                counterT = counterT++
+                                counterT = counterT+1
                                 counter=counter+1
                                 if (counter == 3) {
                                     view.text = "Что такое кванториум?"
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }
@@ -195,13 +226,17 @@ class VictoryActivity : AppCompatActivity() {
                                     bt1.text = "Детский технопарк"
                                     bt2.text = "МБОУ СОш"
                                     bt1.setOnClickListener {
-                                        counterT = counterT++
+                                        counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
+                                        bt2.isEnabled = false
+                                        bt1.isEnabled = false
                                     }
                                 }
                             }

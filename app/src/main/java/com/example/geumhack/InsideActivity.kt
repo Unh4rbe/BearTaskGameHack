@@ -34,6 +34,7 @@ class InsideActivity : AppCompatActivity() {
             }
             if (counter == 5) {
                 var gobear = Intent(this@InsideActivity, MainActivity::class.java)
+                finish()
                 startActivity(gobear)
             }
             counter = counter + 1

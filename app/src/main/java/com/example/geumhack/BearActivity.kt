@@ -33,6 +33,7 @@ class BearActivity : AppCompatActivity() {
             }
             if(counter == 5) {
                 var gobear = Intent(this@BearActivity, T34Activity::class.java)
+                finish()
                 startActivity(gobear)
             }
             counter = counter + 1

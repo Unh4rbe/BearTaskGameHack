@@ -10,9 +10,8 @@ class InfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info)
         var gobackbt = findViewById<Button>(R.id.back)
-        var goback = Intent(this@InfoActivity, MainActivity::class.java)
         gobackbt.setOnClickListener {
-            startActivity(goback)
+            finish()
         }
     }
 }

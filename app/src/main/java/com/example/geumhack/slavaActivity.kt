@@ -34,6 +34,7 @@ class slavaActivity : AppCompatActivity() {
             }
             if (counter == 5) {
                 var gobear = Intent(this@slavaActivity, OutsideActivity::class.java)
+                finish()
                 startActivity(gobear)
             }
             counter = counter + 1
