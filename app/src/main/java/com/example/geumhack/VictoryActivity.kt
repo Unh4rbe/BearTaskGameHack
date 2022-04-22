@@ -44,14 +44,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -65,14 +63,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -95,14 +91,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -116,14 +110,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -156,14 +148,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -177,15 +167,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
-                                        Thread.sleep(3000)
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -208,14 +195,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -229,14 +214,12 @@ class VictoryActivity : AppCompatActivity() {
                                         counterT = counterT+1
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                     bt2.setOnClickListener {
                                         counter=counter+1
                                         view.text = "Количество правильных ответов - $counterT"
-                                        bt2.isEnabled = false
-                                        bt1.isEnabled = false
+                                        btoff()
                                     }
                                 }
                             }
@@ -245,5 +228,11 @@ class VictoryActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+    fun btoff() {
+        var bt1 = findViewById<Button>(R.id.btask)
+        var bt2 = findViewById<Button>(R.id.btask2)
+        bt1.isEnabled = false
+        bt2.isEnabled = false
     }
 }

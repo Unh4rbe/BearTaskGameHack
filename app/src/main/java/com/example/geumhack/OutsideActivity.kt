@@ -16,18 +16,10 @@ class OutsideActivity : AppCompatActivity() {
         var textview = findViewById<TextView>(R.id.textvO)
         textview.text = "Вы: Это технопарк Кванториум"
         btnext.setOnClickListener {
-            if (counter == 0) {
-                textview.text =  "- Медведь: Чем вы тут занимаетесь?"
-            }
-            if (counter == 1) {
-                textview.text = "- Тут есть IT, VR и другие квантумы, мы изучаем программирование и прочее"
-            }
-            if (counter == 2) {
-                textview.text = "- Мы идем на IT квантум"
-            }
-            if (counter == 3) {
-                textview.text =  "- Медведь: хорошо, пошли!"
-            }
+            if (counter == 0) textview.text =  "- Медведь: Чем вы тут занимаетесь?"
+            if (counter == 1) textview.text = "- Тут есть IT, VR и другие квантумы, мы изучаем программирование и прочее"
+            if (counter == 2) textview.text = "- Мы идем на IT квантум"
+            if (counter == 3) textview.text =  "- Медведь: хорошо, пошли!"
             if (counter == 4) {
                 textview.text = "Нужно зайти внутрь"
                 btnext.text = "Идти"
