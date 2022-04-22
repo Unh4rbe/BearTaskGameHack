@@ -8,36 +8,28 @@ import android.widget.Button
 import android.widget.TextView
 
 class T34Activity : AppCompatActivity() {
+    val story = Story(
+        listOf<String>(
+            "По словам медведя, он наиболее вероятно мог оставить балалайку возле танка Т-34, так как он излазил его вдоль и поперек",
+            "- Медведь: ну что, давай посмотрим!",
+            "- Медведь: Пока мы ищем, я расскажу тебе историю этого танка. Он был великолепным защитником во время Великой Отечественной войны. Стоит отдать честь создателю этого танка, его звали Михаил Ильич Кошкин.",
+            "- Медведь: Еще в месте с ним работал Александр Александрович Морозов",
+            "Вы не видите балалайки, собственно как и причин задерживаться. Вы идете дальше...",
+        )
+    )
+    val btnext: Button by lazy { findViewById<Button>(R.id.btnextT) }
+    val textview: TextView by lazy { findViewById<TextView>(R.id.textvT) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_t34)
-        var btnext = findViewById<Button>(R.id.btnextT)
-        var counter = 0
-        var textview = findViewById<TextView>(R.id.textvT)
-        textview.text = "По словам медведя, он наиболее вероятно мог оставить балалайку возле танка Т-34, так как он излазил его вдоль и поперек"
+        story.updateMessage(textview, btnext)
         btnext.setOnClickListener {
-            if (counter == 0) {
-                textview.text =  "- Медведь: ну что, давай посмотрим! "
-            }
-            if (counter == 1) {
-                textview.text = "C переди определенно нет балалайки, может стоит посмотреть сзади?"
-            }
-            if (counter == 2) {
-                textview.text = "- Медведь: Пока мы ищем, я расскажу тебе историю этого танка. Он был великолепным защитником во время Великой Отечественной войны. Стоит отдать честь создателю этого танка, его звали Михаил Ильич Кошкин."
-            }
-            if (counter == 3) {
-                textview.text =  "- Медведь: Еще в месте с ним работал Александр Александрович Морозов"
-            }
-            if (counter == 4) {
-                textview.text = "Вы не видите балалайки, собственно как и причин задерживаться. Вы идете дальше..."
-                btnext.text = "Идти"
-            }
-            if (counter == 5) {
+            if (story.updateMessage(textview, btnext).not()) {
                 var gobear = Intent(this@T34Activity, PeresActivity::class.java)
                 finish()
                 startActivity(gobear)
             }
-            counter = counter + 1
         }
     }
 }

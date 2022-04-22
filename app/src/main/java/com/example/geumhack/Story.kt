@@ -13,7 +13,8 @@ class Story(
         btnext : Button
     ) : Boolean {
         if (currentMessage == mas.lastIndex){
-            btnext.text = "Идти"
+            if (mas[mas.lastIndex] == "Конец игры")  btnext.text = "Конец"
+            else btnext.text = "Идти"
         }
         textview.text = mas.getOrNull(currentMessage) ?: return false
         currentMessage++
