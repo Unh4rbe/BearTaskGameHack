@@ -8,7 +8,7 @@
     tools:context=".BearActivity">
 
     <TextView
-        android:id="@+id/textvB"
+        android:id="@+id/textv"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginTop="220dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnextB"
+        android:id="@+id/btnext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="100dp"

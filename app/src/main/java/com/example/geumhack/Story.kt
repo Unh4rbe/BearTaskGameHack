@@ -4,14 +4,13 @@ import android.widget.Button
 import android.widget.TextView
 
 class Story(
+     val textview : TextView,
+    val btnext : Button,
     var mas : List<String> = listOf()
 ){
     var currentMessage = 0
 
-    fun updateMessage(
-        textview : TextView,
-        btnext : Button
-    ) : Boolean {
+    fun updateMessage() : Boolean {
         if (currentMessage == mas.lastIndex){
             if (mas[mas.lastIndex] == "Конец игры")  btnext.text = "Конец"
             else btnext.text = "Идти"
