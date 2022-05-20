@@ -30,7 +30,7 @@ class VictoryActivity : AppCompatActivity() {
                         counterT = counterT+1
                         counter=counter+1
                         if (counter == 2) {
-                            view.text = "В каком году и какого чила открыли мемориал славы?"
+                            view.text = "В каком году и какого чиcла открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
@@ -77,7 +77,7 @@ class VictoryActivity : AppCompatActivity() {
                     bt2.setOnClickListener {
                         counter=counter+1
                         if (counter == 2) {
-                            view.text = "В каком году и какого чила открыли мемориал славы?"
+                            view.text = "В каком году и какого чиcла открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
@@ -134,7 +134,7 @@ class VictoryActivity : AppCompatActivity() {
                         counterT = counterT+1
                         counter=counter+1
                         if (counter == 2) {
-                            view.text = "В каком году и какого чила открыли мемориал славы?"
+                            view.text = "В каком году и какого чиcла открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
@@ -181,7 +181,7 @@ class VictoryActivity : AppCompatActivity() {
                     bt2.setOnClickListener {
                         counter=counter+1
                         if (counter == 2) {
-                            view.text = "В каком году и какого чила открыли мемориал славы?"
+                            view.text = "В каком году и какого чиcла открыли мемориал славы?"
                             bt1.text = "9 мая 1971"
                             bt2.text = "9 марта 1971"
                             bt1.setOnClickListener {
